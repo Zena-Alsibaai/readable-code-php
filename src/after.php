@@ -16,7 +16,7 @@ function pizzaOrder($pizzatype, $name) {
             $address ='BeCode office';
             break;
     }
-    echo 'Creating new order... <br>';
+        echo 'Creating new order... <br>';
     $toPrint .=   ' pizza should be sent to ' . $name . ". <br>The address: {$address}.";
         echo $toPrint; echo '<br>';
         echo'The bill is €'.$price.'.<br>';
@@ -44,11 +44,7 @@ function ordr_piz_all(){
     pizzaOrder('marguerita', 'nick');
     pizzaOrder('golden', 'students');
 }
+ordr_piz_all();
 
-function make_Allhappy($do_it) {
-if ($do_it) {
-    ordr_piz_all();
-    } 
-}
 
-make_Allhappy(true);
+
